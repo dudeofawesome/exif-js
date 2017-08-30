@@ -150,7 +150,11 @@ interface EXIFStatic {
 }
 
 type ExifInputImage = string | HTMLImageElement | any;
-type ExifImage = any;
+type ExifImage = HTMLImageElement & {
+    exitdata: {[key: string]: string};
+    iptcdata: {[key: string]: string};
+    xmpdata: {[key: string]: string};
+};
 
 declare var EXIF : EXIFStatic;
 export = EXIF;
