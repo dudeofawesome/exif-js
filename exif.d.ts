@@ -149,7 +149,7 @@ interface EXIFStatic {
     };
 }
 
-type ExifInputImage = string | Image | HTMLImageElement;
+type ExifInputImage = string | HTMLImageElement | any;
 type ExifImage = any;
 
 declare var EXIF : EXIFStatic;
