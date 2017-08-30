@@ -1,5 +1,5 @@
 interface EXIFStatic {
-    getData(url: ExifImage, callback: (this: ExifImage, img: ExifImage) => any): boolean;
+    getData(img: ExifInputImage, callback: (this: ExifImage, img: ExifImage) => any): boolean;
     getTag(img: ExifImage, tag: string): any;
     getIptcTag(img: ExifImage, tag: string): any;
     getAllTags(img: ExifImage): {[key: string]: string};
